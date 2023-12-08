@@ -25,7 +25,7 @@ double countIndividualExercise({required double weight, required double time, do
 // Pure function
 double _generalSportsCalculation(double weight, double time, double met) => weight * time * met;
 
-double _individualExerciseCalculation(double weight, double time, double met) => (weight * time * met) / 200;
+double _individualExerciseCalculation(double weight, double time, double met) => weight * time * met;
 
 final Map<String, Map<LanguageType, String>> additionalCaloryTrackerData = {
   'This feature is still not available': {
