@@ -18,14 +18,12 @@ double performExerciseCalculation({
 }) =>
     calculation(weight, time, met) / 1000;
 
-double countGeneralSports({required double weight, required double time, double met = 7.0}) => performExerciseCalculation(weight: weight, time: time, met: met, calculation: _generalSportsCalculation);
+double countGeneralSports({required double weight, required double time, double met = 3.0}) => performExerciseCalculation(weight: weight, time: time, met: met, calculation: _exerciseCalculation);
 
-double countIndividualExercise({required double weight, required double time, double met = 7.0}) => performExerciseCalculation(weight: weight, time: time, met: met, calculation: _individualExerciseCalculation);
+double countIndividualExercise({required double weight, required double time, double met = 7.0}) => performExerciseCalculation(weight: weight, time: time, met: met, calculation: _exerciseCalculation);
 
 // Pure function
-double _generalSportsCalculation(double weight, double time, double met) => weight * time * met;
-
-double _individualExerciseCalculation(double weight, double time, double met) => weight * time * met;
+double _exerciseCalculation(double weight, double time, double met) => time * (met * 3.5 * weight) / 200;
 
 final Map<String, Map<LanguageType, String>> additionalCaloryTrackerData = {
   'This feature is still not available': {
