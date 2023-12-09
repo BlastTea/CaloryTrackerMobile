@@ -115,9 +115,9 @@ class _HistoryFragmentState extends State<HistoryFragment> with SingleTickerProv
                                           ),
                                         ),
                                         ListTile(
-                                          title: Text(language['Total hour']!),
+                                          title: Text(language['Total minute']!),
                                           trailing: Text(
-                                            Language.getInstance().getValue('{0} Hour', [stateHistory.exercises.fold(0.0, (previousValue, element) => previousValue + element.time).toThousandFormat(fractionalDigits: 2)])!,
+                                            Language.getInstance().getValue('{0} Minute', [stateHistory.exercises.fold(0.0, (previousValue, element) => previousValue + element.time).toThousandFormat(fractionalDigits: 2)])!,
                                             style: Theme.of(context).textTheme.bodyLarge,
                                           ),
                                         ),
@@ -214,7 +214,7 @@ class _HistoryFragmentState extends State<HistoryFragment> with SingleTickerProv
                                           children: [
                                             if (index == 0) const SizedBox(height: 8.0),
                                             ListTile(
-                                              title: Text(Language.getInstance().getValue('{0} Hour', [exercise.time.round()])!),
+                                              title: Text(Language.getInstance().getValue('{0} Minute', [exercise.time.round()])!),
                                               subtitle: Text('${Language.getInstance().getValue('{0} kcal', [exercise.caloriesBurned.toThousandFormat()])!}\n${exercise.date.toFormattedDate(withWeekday: true, withMonthName: true, withHour: true)}'),
                                               isThreeLine: true,
                                               onTap: () => NavigationHelper.to(MaterialPageRoute(builder: (context) => DetailExercisePage(exercise: exercise))),

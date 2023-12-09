@@ -27,7 +27,7 @@ class DetailExercisePage extends StatelessWidget {
               ),
               ListTile(
                 title: Text(language['Exercise time']!),
-                subtitle: Text(Language.getInstance().getValue('{0} Hour', [exercise.time.toThousandFormat(fractionalDigits: 2)])!),
+                subtitle: Text(Language.getInstance().getValue('{0} Minute', [exercise.time.toThousandFormat(fractionalDigits: 2)])!),
               ),
               ListTile(
                 title: Text(language['Exercise type']!),

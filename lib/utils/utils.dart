@@ -126,9 +126,9 @@ final Map<String, Map<LanguageType, String>> additionalCaloryTrackerData = {
     LanguageType.unitedStatesEnglish: 'Kg',
     LanguageType.indonesiaIndonesian: 'Kg',
   },
-  'Hour': {
-    LanguageType.unitedStatesEnglish: 'Hour',
-    LanguageType.indonesiaIndonesian: 'Jam',
+  'Minute': {
+    LanguageType.unitedStatesEnglish: 'Minute',
+    LanguageType.indonesiaIndonesian: 'Menit',
   },
   'Weight': {
     LanguageType.unitedStatesEnglish: 'Weight',
@@ -206,9 +206,9 @@ final Map<String, Map<LanguageType, String>> additionalCaloryTrackerData = {
     LanguageType.unitedStatesEnglish: '{0} Kg',
     LanguageType.indonesiaIndonesian: '{0} Kg',
   },
-  '{0} Hour': {
-    LanguageType.unitedStatesEnglish: '{0} Hour',
-    LanguageType.indonesiaIndonesian: '{0} Jam',
+  '{0} Minute': {
+    LanguageType.unitedStatesEnglish: '{0} Minute',
+    LanguageType.indonesiaIndonesian: '{0} Menit',
   },
   'Date': {
     LanguageType.unitedStatesEnglish: 'Date',
@@ -230,9 +230,9 @@ final Map<String, Map<LanguageType, String>> additionalCaloryTrackerData = {
     LanguageType.unitedStatesEnglish: 'Total exercise',
     LanguageType.indonesiaIndonesian: 'Total olahraga',
   },
-  'Total hour': {
-    LanguageType.unitedStatesEnglish: 'Total hour',
-    LanguageType.indonesiaIndonesian: 'Total jam',
+  'Total minute': {
+    LanguageType.unitedStatesEnglish: 'Total minute',
+    LanguageType.indonesiaIndonesian: 'Total menit',
   },
   'Total calories burned': {
     LanguageType.unitedStatesEnglish: 'Total calories burned',

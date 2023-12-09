@@ -75,7 +75,7 @@ class AddActivityPage extends StatelessWidget {
                           controller: stateAddActivity.textControllerExerciseTime,
                           decoration: InputDecoration(
                             labelText: language['Exercise time']!,
-                            suffixText: language['Hour'],
+                            suffixText: language['Minute'],
                           ),
                           textInputAction: TextInputAction.next,
                           inputFormatters: [textFormatterDoubleOnly],
