@@ -16,7 +16,7 @@ double performExerciseCalculation({
   double met = 7.0,
   required ExerciseCalculation calculation,
 }) =>
-    calculation(weight, time, met) / 1000;
+    calculation(weight, time, met);
 
 double countGeneralSports({required double weight, required double time, double met = 3.0}) => performExerciseCalculation(weight: weight, time: time, met: met, calculation: _exerciseCalculation);
 
